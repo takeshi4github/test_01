@@ -3,6 +3,6 @@ services:
   app:
     build: ./docker/python
     volumes:
-      - ./worker
+      - ./:/worker
     working_dir: /worker
     tty: true
